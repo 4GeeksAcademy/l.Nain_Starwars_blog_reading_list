@@ -1,20 +1,74 @@
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
-			demo: [
-				{
-					title: "FIRST",
-					background: "white",
-					initial: "white"
-				},
-				{
-					title: "SECOND",
-					background: "white",
-					initial: "white"
-				}
-			]
+			personajes: [],
+			vehiculos: [],
+			planetas: [],
+			favoritos: [],
 		},
+
+
 		actions: {
+
+			// Get para traer los personajes
+	
+
+ mostrarPersonajes: () => {
+	fetch ('https://www.swapi.tech/api/people', {
+	method: 'GET',})
+	.then(response => response.json())
+	.then (response => {
+		console.log(response)
+		setStore({personajes:response.results})
+	})
+
+},
+
+mostrarPlanetas: () => {
+	fetch ('https://www.swapi.tech/api/planets', {
+	method: 'GET',})
+	.then(response => response.json())
+	.then (response => {
+		console.log(response)
+		setStore({planetas:response.results})
+	})
+
+},
+
+mostrarVehiculos: () => {
+	fetch ('https://www.swapi.tech/api/vehicles/', {
+	method: 'GET',})
+	.then(response => response.json())
+	.then (response => {
+		console.log(response)
+		setStore({vehiculos:response.results})
+	})
+
+},
+
+
+incluirFavoritos: (name) => {
+	const store = getStore();
+	const favoritos = store.favoritos;
+	const nuevosFavoritos = favoritos.includes(name)
+	? favoritos
+	: [...favoritos, name];
+	setStore({ ...store, favoritos: nuevosFavoritos });
+},
+
+//Eliminar FAVORITOS-
+botonEliminarFavoritos:(index) => {
+	const store = getStore();
+	let eliminar = store.favoritos.filter((t, i) => i !== index);
+	setStore({...store, favoritos:eliminar});
+},
+
+
+
+
+
+
+
 			// Use getActions to call a function within a fuction
 			exampleFunction: () => {
 				getActions().changeColor(0, "green");

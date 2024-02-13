@@ -1,0 +1,183 @@
+
+
+@import url('https://fonts.cdnfonts.com/css/star-wars');
+
+
+.container-fluid {
+    background: black;
+}
+
+.header {
+    border-bottom: 1px solid #aa368959;
+    padding: 20px 64px;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    background-color: black;
+    /* padding-bottom: 20px; */
+    /* animation: animatedOne 30s linear infinite; */
+}
+
+img.imgStarWars {
+    width: 24%;
+}
+
+
+  .favoritos {
+    padding-top: 20px;
+}
+
+.dropdown {
+    text-align: right;
+    font-family: 'Martian Mono', monospace;
+}
+
+.dropdown-menu-dark {
+  color: #dee2e6;
+  background-color: #000000;
+  border-color: rgba(0,0,0,.15);
+
+}
+
+p#parrafo {
+    text-align: left;
+}
+
+ul.dropdown-menu.dropdown-menu-dark.show {
+  font-size: 13px;
+  border: 1px solid #f1f1f1;
+  border-radius: 0px;
+  width: 78%;
+  padding: 10px 10px;
+}
+
+
+
+.draw-border {
+    box-shadow: inset 0 0 0 2px #ffffff;
+    color:#aa3689; 
+    -webkit-transition: color 0.25s 0.0833333333s;
+    transition: color 0.25s 0.0833333333s;
+    position: relative;
+  }
+  .draw-border::before, .draw-border::after {
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+  }
+  .draw-border::before {
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+  }
+  .draw-border::after {
+    border-top-width: 2px;
+    border-right-width: 2px;
+  }
+  .draw-border:hover {
+    color:#760f87;
+  }
+  .draw-border:hover::before, .draw-border:hover::after {
+    border-color: #760f87;
+    -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
+    transition: border-color 0s, width 0.25s, height 0.25s;
+    width: 100%;
+    height: 100%;
+  }
+  .draw-border:hover::before {
+    -webkit-transition-delay: 0s, 0s, 0.25s;
+            transition-delay: 0s, 0s, 0.25s;
+  }
+  .draw-border:hover::after {
+    -webkit-transition-delay: 0s, 0.25s, 0s;
+            transition-delay: 0s, 0.25s, 0s;
+  }
+  
+  .btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    line-height: 1.5;
+    padding: 1em 2em;
+    letter-spacing: 0.05rem;
+  }
+  .btn:focus {
+box-shadow: 0 0 0 0px #760f87;
+  }
+  
+
+  .btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0px #760f87;
+}
+
+li.lista.d-flex {
+  align-items: center;
+  justify-content: space-between;
+  display: flex!important;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+    .four h1 {
+        margin: 0px 0px;
+        text-align: center;
+        font-size: 53px;
+        width: 17ch;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: typing 1.5s steps(13, end), blink-caret 0.5s step-end infinite }
+
+  .favoritos {
+    padding-top: 4px;
+}
+
+.dropdown {
+    text-align: center;
+}
+
+    .header {
+      padding: 10px 20px 20px 20px;
+        width: 100%;
+        position: absolute;
+        z-index: 100;
+        background-color: black;
+    }
+
+    .col-2 {
+        padding-bottom: 40px;
+        margin: 0 auto;
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    .row.principal {
+      padding-top: 100px;
+      padding: 10px 30px 0px 30px;
+  }
+.row.principal-planetas-vehiculos{
+    padding: 0px 30px 0px 30px;
+}
+
+
+.card.mb-5 {
+    border: 1px solid #9c27b057;
+    background: black;
+}
+
+img.imgStarWars {
+  padding: 20px 0px;
+  display: block;
+  /* text-align: center; */
+  margin: 0 auto;
+  width: 30%;
+}
+
+}

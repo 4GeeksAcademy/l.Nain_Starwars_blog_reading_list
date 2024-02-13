@@ -1,3 +1,199 @@
 /* 
     General Styles
 */
+
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100;200&family=Montserrat:wght@100;300;400&display=swap');
+@import url('https://fonts.cdnfonts.com/css/star-wars');
+
+
+body {
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.encabezado  {
+    background: url(http://www.script-tutorials.com/demos/360/images/stars.png) no-repeat center center;
+    background-size: cover;
+    padding: 120px 10px 40px 10px;
+}
+
+.encabezado-planetas-vehiculos {
+    background: url(http://www.script-tutorials.com/demos/360/images/stars.png) no-repeat center center;
+    background-size: cover;
+    padding: 80px 10px 40px 10px;
+}
+
+.encabezado h2 {
+    font-family: 'Star Wars', sans-serif;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.encabezado-planetas-vehiculos h6 {
+    font-family: 'Star Wars', sans-serif;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 2s steps(14) 1s 1 normal both,
+             blinkTextCursor 500ms steps(14) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 8em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+
+.espaciado {
+    padding-top: 136px;
+}
+
+.col-2 {
+    margin: 0 auto;
+    flex: 0 0 auto;
+    width: 19.666667%;
+}
+
+.row.principal {
+    padding-top: 100px;
+    padding: 20px 64px 20px 64px;
+}
+
+.row.principal-planetas-vehiculos {
+    padding: 20px 64px 20px 64px;
+}
+
+img.card-img-top {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 4/4;
+    filter: grayscale(82%);
+}
+img.card-img-top:hover {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 4/4;
+    filter: grayscale(0%);
+}
+
+
+
+i.fa-solid.fa-heart {
+    color: #ffffff;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 18px;
+}
+
+i.fa-solid.fa-heart:hover {
+    color:#ffffff;
+}
+
+.card-body {
+    padding: 28px 4px 10px 4px;
+}
+
+.btn-check:active+.btn-primary:focus, .btn-check:checked+.btn-primary:focus, .btn-primary.active:focus, .btn-primary:active:focus, .show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.25rem rgb(255 255 255 / 50%);
+}
+
+.btn-check:active+.btn-primary, .btn-check:checked+.btn-primary, .btn-primary.active, .btn-primary:active, .show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #000;
+    border-color: #000;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #000;
+    border-color: #000;
+}
+
+.info {
+    padding: 5px 0px 14px 10px;
+}
+
+.btn-primary {
+    color: #ffffff;
+    background-color: #000;
+    border-color: #000;
+}
+.btn {
+   
+    padding: 10px 0px;
+    font-size: 15px;
+    border-radius: 0px;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+hr {
+    margin: 0 auto;
+    width: 24%;
+    height: 2px;
+    color:#d516c5;
+}
+
+.card.mb-5 {
+    display: -webkit-flex;
+    display: flex;
+    border: 1px solid #ffffff57;
+    background: black;
+}
+
+
+.card {
+
+    border-radius: 0px;
+}
+
+.h6, h6 {
+    font-family: 'Martian Mono', monospace;
+    color: white;
+    text-align: right;
+    font-size: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+    .row.principal {
+        padding-top: 100px;
+        padding: 20px 24px 20px 24px;
+    }
+
+    
+    .row.principal-planetas-vehiculos {
+        padding: 20px 24px 20px 24px;
+    }
+   
+    
+}
+
+
+@media only screen and (min-width: 992px) {
+    .row.principal {
+        padding-top: 100px;
+        padding: 20px 64px 20px 64px;
+    }
+
+
+}
